@@ -3,3 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#ade8f4, #00b4d8);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#title{
+    /* background-color: red; */
+    margin-bottom: 50px;
+}
+.location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 35px;
+    /* background-color: green; */
+}
+.icon{
+    margin-left: 50px;
+}
+.temp{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: space-between;
+    text-align: center;
+    /* background-color: purple; */
+    margin-top: 20px;
+}
+.temp-degree{
+    margin-top: 5px;
+}
+.temp-description{
+    margin: 5px;
+    margin-top: 15px;
+}
