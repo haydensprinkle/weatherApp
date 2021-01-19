@@ -35,8 +35,14 @@ body{
     /* background-color: purple; */
     margin-top: 20px;
 }
+.degree-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .temp-degree{
     margin-top: 5px;
+    padding-bottom: 5px;
 }
 .temp-description{
     margin: 5px;

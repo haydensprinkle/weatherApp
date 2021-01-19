@@ -1,3 +1,8 @@
+let timezoneEl = document.querySelector(".timezone");
+let iconEl = document.querySelector(".icon");
+let degreeEl = document.querySelector(".temp-degree");
+let descriptionEl = document.querySelector(".temp-description");
+
 window.addEventListener("load", () => {
   let lon;
   let lat;
@@ -20,15 +25,10 @@ window.addEventListener("load", () => {
           const { timezone } = data;
           const { temp } = data.current;
           const { description } = data.current.weather[0];
-          console.log(temp);
-          console.log(timezone);
-          console.log(description);
+          timezoneEl.innerHTML = timezone.replace(/[_-]/g, " ");
+          degreeEl.innerHTML = Math.floor(temp);
+          descriptionEl.innerHTML = description;
         });
     });
   }
 });
-
-let timezoneEl = document.querySelector(".timezone");
-let iconEl = document.querySelector(".icon");
-let degreeEl = document.querySelector(".temperature-degree");
-let descriptionEl = document.querySelector(".temperature-description");
